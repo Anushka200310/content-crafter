@@ -41,24 +41,16 @@ const Historypage = async() => {
   return (
     <div className='m-5 p-5 border rounded-lg overflow-x-auto'>
          <h2 className='font-bold text-3xl mb-4'>History</h2>
-        {/* <p className='text-gray-500 my-4'>Search your previously generate AI content</p> */}
-
      <Table>
         <TableCaption>A list of your recent activities.</TableCaption>
         <TableHeader>
-
-         {!history ? 
-            <div className='flex items-center justify-center'>
-                <h2 className='text-gray-500 text-3xl'>No history found</h2>
-            </div>: 
-
       <TableRow>
          <TableHead>Tools</TableHead>
          <TableHead>AI Content</TableHead>
          <TableHead>Date</TableHead>
          <TableHead>Words</TableHead>
          <TableHead>Copy</TableHead>
-      </TableRow>}
+      </TableRow>
       </TableHeader>
       <TableBody>
     {history.map((item:HISTORY,index:number)=>(
