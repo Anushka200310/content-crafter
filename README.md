@@ -1,5 +1,5 @@
 
-## Getting Started
+## Content Crafter
 
 First, run the development server:
 
