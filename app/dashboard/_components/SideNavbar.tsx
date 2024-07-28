@@ -1,6 +1,6 @@
 "use client"
 
-import { FileClock, HomeIcon, Settings, Wallet } from 'lucide-react';
+import { Activity,HomeIcon, Settings, Wallet } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react'
@@ -17,8 +17,8 @@ const SideNavbar = () => {
     },
     {
         id: 2,
-        name: "History",
-        icon: FileClock,
+        name: "Activity",
+        icon: Activity,
         path: "/dashboard/history"
     },
     {
